@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Reseñas</title>
+    <link rel="stylesheet" href="boostrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+      <header class="col-md-12 mt-2">
+        <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+  <div class="container-fluid">
+    <div id="logo">
+      <a class="navbar-brand" href="#"></a>
+      <a href="#">Games-Anime</a>
+    </div>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Categorias
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a type="button"  class="nav-link active" data-bs-toggle="modal" data-bs-target="#inicio-session">
+            Inicio de session
+          </a>
+        </li>
+        <li class="nav-item">
+          <a type="button"  class="nav-link active" data-bs-toggle="modal" data-bs-target="#registro">
+            Registro
+          </a>
+        </li>
+
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+      <!-- ventana de spam para el login and create  user-->
+      <!-- login -->
+      <div class="modal fade" id="inicio-session" tabindex="-1" aria-labelledby="inicio-session" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <form>
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar la session</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <label for="email" class="form-label">Usuario(Correo)</label>
+              <input type="email" name="email" class="form-control" id="email">
+
+              <label for="password" class="form-label">Contraseña</label>
+              <input type="password" name="password" class="form-control" id="password">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
+              <button type="submit" class="btn btn-primary">Continuar</button>
+            </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- create user -->
+      <div class="modal fade" id="registro" tabindex="-1" aria-labelledby="registro" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <form>
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar la session</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" name="nombre" class="form-control" id="email">
+
+              <label for="apellido" class="form-label">Apellido</label>
+              <input type="text" name="apellido" class="form-control" id="password">
+              <label for="email" class="form-label">Usuario(Correo)</label>
+              <input type="email" name="email" class="form-control" id="email">
+
+              <label for="password" class="form-label">Contraseña</label>
+              <input type="password" name="password" class="form-control" id="password">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
+              <button type="submit" class="btn btn-primary">Continuar</button>
+            </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- fin -->
+  </div>
+</nav>
+      </header>
+      <div class="row justify-content-center">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+            <li class="breadcrumb-item"><a href="#">Desarollo Web</a></li>
+            <li class="breadcrumb-item"><a href="#">Componentes boostrap</a></li>
+          </ol>
+        </nav>
+        <div class="slider col-lg-6 col-md-4 col-sm-6 col-xs-12 m-3">
+          <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="background-image:url('img/mario_broos.gif')">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Its me Mario</h5>
+          <p>Time for salve the princess</p>
+        </div>
+      </div>
+      <div class="carousel-item" style="background-image:url('img/tkof.gif')">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>The King of Fighters are back</h5>
+          <p>Game for your figth.</p>
+        </div>
+      </div>
+      <div class="carousel-item" style="background-image:url('img/pacman.gif')">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Eat, Eat ,Eat</h5>
+          <p>:V Look this pacman</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+          </div>
+        </div>
+
+      </div>
+      <h1>ULTIMAS ENTRADAS</h1>
+      <div class="card-group m-4">
+  <div class="card m-1">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card m-1">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card m-1">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+      </div>
+      <div id="ver-todas">
+        <a href="#"> Ver todas las entradas</a>
+      </div>
+    </div>
+    <footer id="pie" class="text-center text-dark">
+      <p>Desarollado por Daniel Barona &copy; 2025</p>
+    </footer>
+    <script type="text/javascript" src="jquerry/jquery-3.7.1.min.js"></script>   
+    <script type="text/javascript" src="jquerry/popper.min.js"></script>
+    <script type="text/javascript" src="boostrap/js/bootstrap.min.js"></script> 
+</body>
+</html>
